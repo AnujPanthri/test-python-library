@@ -35,5 +35,5 @@ deploy:
   script:
     - pip install --upgrade build twine
     - python -m build
-    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url https://gitlab.domain.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url https://github.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi dist/*
   allow_failure: false

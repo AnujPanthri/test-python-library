@@ -5,7 +5,7 @@ with open("README.md","r",encoding="utf-8") as f:
 
 setuptools.setup(
     name = "test-python-library",
-    version ='0.0.1',
+    version ='0.0.2',
     author = "Anuj Panthri",
     author_email="panthrianuj@gmail.com",
     description="just a sample library",
